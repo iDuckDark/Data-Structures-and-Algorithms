@@ -21,11 +21,11 @@
     hooks:
     -   id: pylint
 
--   repo: local
-    hooks:
-    -   id: tests
-        name: Run Tests
-        entry: pytest --verbose
-        language: system
-        types: [python]
-        # stages: [push]
+# -   repo: local
+#     hooks:
+#     -   id: tests
+#         name: Run Tests
+#         entry: pytest --verbose
+#         language: system
+#         types: [python]
+#         # stages: [push]
