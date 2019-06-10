@@ -1,10 +1,10 @@
-"""test array alogrithms"""
+"""test pattern matching alogrithms"""
 from src.pattern_match import boyer_moore
 from src.pattern_match import knuth_morris_pratt
 
 
 def test_pattern_match():
-    """test booyer_moore"""
+    """test pattern matching algorithms"""
     test_cases = (
         ("ABBCBBD", "BC", [2]),
         ("ABBCBEBCBD", "BC", [2, 6]),
