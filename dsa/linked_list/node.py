@@ -9,7 +9,13 @@ class Node:
         self.next = None
 
     def __str__(self):
-        return str(self.data)
+        out = []
+        node = self
+        while node:
+            out.append(str(node.data))
+            node = node.next
+
+        return " -> ".join(out)
 
     def __eq__(self, other):
         return self.data == other.data

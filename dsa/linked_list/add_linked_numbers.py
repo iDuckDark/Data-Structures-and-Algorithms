@@ -25,13 +25,14 @@ def add_linked_numbers(node_a: Node, node_b: Node) -> Node:
     _sum = 0
     while node_a or node_b:
         if node_a:
-            _sum += node_a.val
+            _sum += node_a.data
             node_a = node_a.next
         if node_b:
-            _sum += node_b.val
+            _sum += node_b.data
             node_b = node_b.next
         current.next = Node(_sum % 10)
         current = current.next
+        _sum //= 10
 
     if _sum // 10:  # is there a carry at the end?
         current.next = Node(1)
@@ -64,6 +65,6 @@ def list_to_int(lst: Node) -> int:
     """
     result = ""
     while lst:
-        result += str(lst.val)
+        result += str(lst.data)
         lst = lst.next
-    return int(result)
+    return int(result[::-1])
