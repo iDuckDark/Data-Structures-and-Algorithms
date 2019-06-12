@@ -1,9 +1,9 @@
-"""test fibonacci alogrithms"""
+"""test math alogrithms"""
 # from dsa.math import class_memoization_fibonacci
-from dsa.math import explicit_fibonacci
-from dsa.math import function_memoization_fibonacci
-from dsa.math import iterative_fibonacci
-from dsa.math import recursive_fibonacci
+from dsa.math import fibonacci_closed
+from dsa.math import fibonacci_iterative
+from dsa.math import fibonacci_memoized
+from dsa.math import fibonacci_recursive
 
 
 def test_fibonacci():
@@ -12,7 +12,7 @@ def test_fibonacci():
 
     for args, expected in test_cases:
         # assert class_memoization_fibonacci(args) == expected
-        assert explicit_fibonacci(args) == expected
-        assert function_memoization_fibonacci(args) == expected
-        assert iterative_fibonacci(args) == expected
-        assert recursive_fibonacci(args) == expected
+        assert fibonacci_closed(args) == expected
+        assert fibonacci_iterative(args) == expected
+        assert fibonacci_memoized(args) == expected
+        assert fibonacci_recursive(args) == expected

@@ -8,7 +8,7 @@ Implementations of data structures and algorithms in Python, with a focus on cod
 
 ## Usage
 ```python
-from algorithms.sort import merge_sort
+from dsa.sort import merge_sort
 
 arr = [1, 8, 3, 5, 6]
 arr = merge_sort(arr)
@@ -20,3 +20,10 @@ To run tests, change to the main directory and run `pytest`.
 
 ## Contributing
 See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## Similar Projects
+- https://github.com/phishman3579/java-algorithms-implementation
+- https://github.com/keon/algorithms
+- https://github.com/TheAlgorithms/Python
+- https://github.com/trekhleb/javascript-algorithms
+- https://github.com/OpenGenus/cosmos
