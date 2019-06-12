@@ -1,8 +1,8 @@
 """test array alogrithms"""
-from src.array import dynamic_subset_sum
-from src.array import find_peak
-from src.array import two_sum_dict
-from src.array import two_sum_naive
+from dsa.array import dynamic_subset_sum
+from dsa.array import find_peak
+from dsa.array import two_sum_dict
+from dsa.array import two_sum_naive
 
 
 def test_two_sum():

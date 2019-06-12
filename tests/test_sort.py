@@ -1,8 +1,8 @@
 """test sorting alogrithms"""
-from src.sort import insertion_sort
-from src.sort import insertion_sort_optimized
-from src.sort import merge_sort
-from src.sort import selection_sort
+from dsa.sort import insertion_sort
+from dsa.sort import insertion_sort_optimized
+from dsa.sort import merge_sort
+from dsa.sort import selection_sort
 
 
 def test_sort():

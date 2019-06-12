@@ -1,6 +1,6 @@
 """test pattern matching alogrithms"""
-from src.pattern_match import boyer_moore
-from src.pattern_match import knuth_morris_pratt
+from dsa.pattern_match import boyer_moore
+from dsa.pattern_match import knuth_morris_pratt
 
 
 def test_pattern_match():

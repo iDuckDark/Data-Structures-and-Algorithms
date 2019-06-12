@@ -57,4 +57,3 @@ def boyer_moore(input_string, pattern):
             j = len(pattern) - 1
             # Note: a minumum of j guarrantees we do not move so far back that we start
             # matching again from a section we've already eliminated.
-    

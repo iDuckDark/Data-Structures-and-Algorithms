@@ -1,6 +1,6 @@
 """test string alogrithms"""
-from src.string import common_prefix
-from src.string import longest_substring
+from dsa.string import common_prefix
+from dsa.string import longest_substring
 
 
 def test_common_prefix():
