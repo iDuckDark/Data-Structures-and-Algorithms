@@ -16,6 +16,7 @@ Report bugs using the [issue tracker](https://github.com/benburk/dsa_python/issu
 ## Contributing
 1. Fork the repository
 2. install pre-commit (`pip install pre-commit`) to ensure style-guides and code checks are followed.
+3. Run `pre-commit install`
 3. `git checkout -b <branch-name>`
 4. Edit, add, and commit your changes.
 5. `git push -u origin <branch-name>`
