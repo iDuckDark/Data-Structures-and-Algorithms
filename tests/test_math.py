@@ -1,12 +1,12 @@
 """test fibonacci alogrithms"""
-from src.fibonacci import class_memoization_fibonacci
-from src.fibonacci import explicit_fibonacci
-from src.fibonacci import function_memoization_fibonacci
-from src.fibonacci import iterative_fibonacci
-from src.fibonacci import recursive_fibonacci
+from src.math import class_memoization_fibonacci
+from src.math import explicit_fibonacci
+from src.math import function_memoization_fibonacci
+from src.math import iterative_fibonacci
+from src.math import recursive_fibonacci
 
 
-def test_sort():
+def test_fibonacci():
     """test fibonacci algorithms"""
     test_cases = (
         (0, 0),
