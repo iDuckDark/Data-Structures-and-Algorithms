@@ -20,6 +20,7 @@
     rev: 'v2.3.1'
     hooks:
     -   id: pylint
+        args: [--disable=import-error]
 
 # -   repo: local
 #     hooks:
