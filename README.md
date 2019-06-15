@@ -27,3 +27,4 @@ See [CONTRIBUTING.md](CONTRIBUTING.md).
 - https://github.com/TheAlgorithms/Python
 - https://github.com/trekhleb/javascript-algorithms
 - https://github.com/OpenGenus/cosmos
+- https://www.geeksforgeeks.org/top-algorithms-and-data-structures-for-competitive-programming/
