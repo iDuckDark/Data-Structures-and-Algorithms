@@ -1,15 +1,15 @@
 """test linked list alogrithms"""
 from dsa.linked_list import add_linked_numbers
-from dsa.linked_list import int_to_list
-from dsa.linked_list import list_to_int
+from dsa.linked_list import Node
 
 
 def test_add_linked_numbers():
     """test sorting algorithms"""
     test_cases = (
-        (int_to_list(342), int_to_list(465), 807),
-        (int_to_list(0), int_to_list(0), 0),
+        (Node([1, 2, 3]), Node([2, 3, 4]), 357),  # 321 + 432 = 753
+        (Node([2, 4, 3]), Node([5, 6, 4]), 708),  # 342 + 465 = 807
+        (Node(0), Node(0), 0),  # 0 + 0 = 0
     )
 
     for *args, expected in test_cases:
-        assert list_to_int(add_linked_numbers(*args)) == expected
+        assert str(add_linked_numbers(*args)) == str(expected)

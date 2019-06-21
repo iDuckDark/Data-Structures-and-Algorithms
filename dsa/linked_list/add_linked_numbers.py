@@ -37,34 +37,3 @@ def add_linked_numbers(node_a: Node, node_b: Node) -> Node:
     if _sum // 10:  # is there a carry at the end?
         current.next = Node(1)
     return head.next
-
-
-def int_to_list(number: int) -> Node:
-    """
-    convert a positive integer into a (reversed) linked list.
-    112 -> 2 -> 1 -> 1
-    """
-    head = Node(0)
-    current = head
-    remainder = number % 10
-    quotient = number // 10
-
-    while quotient != 0:
-        current.next = Node(remainder)
-        current = current.next
-        remainder = quotient % 10
-        quotient //= 10
-    current.next = Node(remainder)
-    return head.next
-
-
-def list_to_int(lst: Node) -> int:
-    """
-    convert a non-negative number list into a string.
-    TODO: use numbers instead of strings
-    """
-    result = ""
-    while lst:
-        result += str(lst.data)
-        lst = lst.next
-    return int(result[::-1])
