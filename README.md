@@ -19,7 +19,7 @@ print(arr)
 To run tests, change to the main directory and run `pytest`.
 
 ## Contributing
-See [CONTRIBUTING.md](CONTRIBUTING.md).
+See [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ## Similar Projects
 - https://github.com/trekhleb/javascript-algorithms (49k)
