@@ -22,3 +22,11 @@ Report bugs using the [issue tracker](https://github.com/benburk/dsa_python/issu
 5. `git push -u origin <branch-name>`
 6. Navigate to the branch on github. Click compare & pull request
 7. Add your message, then click create pull request
+
+## Adding something
+- pick an algorithm
+- pick a category
+- name the file
+- `dsa/category/file_name.py`
+- import * into `__init__.py`
+- add test to `tests/test_category.py`

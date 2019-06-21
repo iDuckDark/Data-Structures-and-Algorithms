@@ -3,7 +3,7 @@ Reverse a linked list
 """
 
 
-def reverse_list(head):
+def reverse(head):
     """
     Reverse a linked list in one pass
     time: O(n)
