@@ -7,8 +7,7 @@ import math
 
 
 def fibonacci_recursive(n):
-    """
-    Recursive implementation of the fibonacci function
+    """Recursive implementation of the fibonacci function
 
     time: (2^n)
         more precisely O((1+sqrt(5))/2)^n)
@@ -21,8 +20,7 @@ def fibonacci_recursive(n):
 
 
 def fibonacci_iterative(n):
-    """
-    Iterative implementation of the fibonacci function
+    """Iterative implementation of the fibonacci function
 
     time: O(n)
     space: O(n)

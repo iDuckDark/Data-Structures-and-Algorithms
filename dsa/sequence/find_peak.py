@@ -1,11 +1,12 @@
 """
-https://leetcode.com/problems/find-peak-element/
-
-Given an array of integers, find the index of a peak element in it. An array element is a
-peak if it is greater than or equal to its neighbors.
+Given an array of integers, find the index of a peak element in it. An array
+element is a peak if it is greater than or equal to its neighbors.
 [10, 20, 30, 40, 50] -> 4
 [1,2,1,3,5,6,4] -> 1 or 5
 [1,2,3,1] -> 2
+
+Found in:
+- https://leetcode.com/problems/find-peak-element/
 """
 
 

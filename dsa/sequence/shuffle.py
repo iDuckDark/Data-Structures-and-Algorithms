@@ -1,19 +1,31 @@
 """
-Implement random shuffle based on a random generator between [0, 1)
+Generate a random permutation of a finite sequence
+Shuffle an array
 """
-import math
 import random
 
 
-def shuffle(arr):
+def shuffle_std(seq):
+    """Shuffle an array using the standard library in-place"""
+    random.shuffle(seq)
+
+
+def shuffle_fy(seq):
     """
+    Fisher-Yates shuffle
+    generates a random permutation of a finite sequence
+    in-place
     time: O(n)
     space: O(1)
+    References:
+    https://en.wikipedia.org/wiki/Fisher–Yates_shuffle
+
+    Args:
+        seq (sequence): sequence to be shuffled
+    Returns:
+        (sequence): shuffled list
     """
-    for i, elem in enumerate(arr):
-        # Swaps current element with another element at random.
-        other = math.floor(random.random() * (len(arr) - i)) + i
-        # Note: we only consider swapping with elements in the array that are after the
-        # current index (this ensures true randomness).
-        arr[i], arr[other] = arr[other], elem
-    return arr
+    for i, elem in enumerate(seq):
+        rand_idx = random.randrange(i, len(seq))
+        seq[i], seq[rand_idx] = seq[rand_idx], elem
+    return seq

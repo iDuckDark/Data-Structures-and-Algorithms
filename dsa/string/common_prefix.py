@@ -1,11 +1,11 @@
 """
-https://leetcode.com/problems/longest-common-prefix/
-
-Find the longest common prefix string amongst an array of strings.
-
-If there is no common prefix, return an empty string "".
+Find the longest common prefix string amongst an array of strings. If there
+is no common prefix, return an empty string "".
 
 ["flower","flow","flight"] -> "fl"
+
+Found in:
+- https://leetcode.com/problems/longest-common-prefix/
 """
 
 

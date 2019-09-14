@@ -4,8 +4,7 @@ Reverse a linked list
 
 
 def reverse(head):
-    """
-    Reverse a linked list in one pass
+    """Reverse a linked list in one pass
     time: O(n)
     """
     prev = None

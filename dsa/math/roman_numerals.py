@@ -50,16 +50,11 @@ def roman_to_int(roman):
     return sum(roman.count(key) * num_map[key] for key in num_map)
 
 
-def main():
+def test_roman_numerals():
     """test code"""
-    tests = (3, 4, 9, 58, 1994)
-    for test in tests:
-        print(int_to_roman(test))
-
-    print(roman_to_int("II"))
-    print(roman_to_int("IV"))
-    print(roman_to_int("X"))
+    assert roman_to_int("III") == 3
+    assert roman_to_int("IV") == 4
 
 
 if __name__ == "__main__":
-    main()
+    test_roman_numerals()
