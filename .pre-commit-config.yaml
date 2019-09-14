@@ -4,12 +4,6 @@
     -   id: check-merge-conflict
     -   id: end-of-file-fixer  # ensure files only end in a newline
 
--   repo: https://github.com/asottile/reorder_python_imports
-    rev: v1.5.0
-    hooks:
-    -   id: reorder-python-imports
-        language_version: python3
-
 -   repo: https://github.com/ambv/black
     rev: stable
     hooks:
