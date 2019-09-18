@@ -22,5 +22,5 @@ def rob(nums: List[int]) -> int:
 def test():
     """test"""
     test_cases = (([1, 2, 3, 1], 4), ([2, 7, 9, 3, 1], 12))
-    for arg, result in test_cases:
-        assert rob(arg) == result
+    for arg, expected in test_cases:
+        assert rob(arg) == expected

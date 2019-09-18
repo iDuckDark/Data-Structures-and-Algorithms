@@ -15,12 +15,16 @@ def is_valid(string: str) -> bool:
 
 def test():
     """test"""
-    assert is_valid("()")
-    assert is_valid("()[]{}")
-    assert not is_valid("(]")
-    assert not is_valid("([)]")
-    assert is_valid("{[]}")
-    assert is_valid("")
+    test_cases = (
+        ("", True),
+        ("()", True),
+        ("()[]{}", True),
+        ("(]", False),
+        ("([)]", False),
+        ("{[]}", True),
+    )
+    for arg, expected in test_cases:
+        assert is_valid(arg) == expected
 
 
 if __name__ == "__main__":

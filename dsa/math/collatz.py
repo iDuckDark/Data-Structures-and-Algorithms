@@ -21,8 +21,8 @@ def collatz(number):
 def test():
     """test"""
     test_cases = ((12, [12, 6, 3, 10, 5, 16, 8, 4, 2, 1]),)
-    for arg, result in test_cases:
-        assert collatz(arg) == result
+    for arg, expected in test_cases:
+        assert collatz(arg) == expected
 
 
 if __name__ == "__main__":

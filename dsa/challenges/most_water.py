@@ -31,9 +31,9 @@ def solve(heights: List[int]) -> int:
 def test():
     """test"""
     tests = (([], 0), ([1, 1], 1), ([5, 2, 4], 8), ([1, 8, 6, 2, 5, 4, 8, 3, 7], 49))
-    for arg, result in tests:
-        assert solve_naive(arg) == result
-        assert solve(arg) == result
+    for arg, expected in tests:
+        assert solve_naive(arg) == expected
+        assert solve(arg) == expected
 
 
 if __name__ == "__main__":
