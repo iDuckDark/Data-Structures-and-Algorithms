@@ -20,7 +20,7 @@ def topological_sort_kahn(graph) -> list:
     nodes" which have no incoming edges and insert them into a queue; at
     least one such node must exist in a non-empty acyclic graph
 
-    Worst case: O(|V| + |E|)
+    Time: O(|V| + |E|)
     """
     ordering = []
 
@@ -43,7 +43,7 @@ def topological_sort_kahn(graph) -> list:
 
 
 def test():
-    """test"""
+    """run test cases"""
     graph = {
         "2": [],
         "3": ["8", "10"],

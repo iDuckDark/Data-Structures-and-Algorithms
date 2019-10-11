@@ -9,8 +9,8 @@ remain.
 def insertion_sort(arr):
     """
     insertion sort using swap
-    time: O(n^2)
-    space: O(1)
+    Time: O(n^2)
+    Space: O(1)
     """
     for i in range(1, len(arr)):
         j = i
@@ -24,8 +24,8 @@ def insertion_sort_optimized(arr):
     """
     a slightly faster version that moves A[i] to its position in one go and
     only performs one assignment in the inner loop body
-    time: O(n^2)
-    space: O(1)
+    Time: O(n^2)
+    Space: O(1)
     """
     for i in range(1, len(arr)):
         key = arr[i]

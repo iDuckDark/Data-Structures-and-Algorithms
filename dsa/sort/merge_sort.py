@@ -13,8 +13,8 @@ will be the sorted list.
 def merge_sort(arr):
     """
     merge sort
-    time: O(nlog(n))
-    space: O(n)
+    Time: O(nlog(n))
+    Space: O(n)
     """
     if len(arr) <= 1:
         return arr

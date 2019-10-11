@@ -24,10 +24,10 @@ def dfs(graph, start):
     return path
 
 
-def test_dfs():
-    """test"""
+def test():
+    """run test cases"""
     dfs(DIRECTED_GRAPH, "C")
 
 
 if __name__ == "__main__":
-    test_dfs()
+    test()

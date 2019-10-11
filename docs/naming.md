@@ -6,7 +6,7 @@ size
 length
 
 total: cumulative sums
-val: element in a contiguous collection
+val, item: element in a contiguous collection
 node: element in a graph
 
 length: contiguous elements - e.g. string, array

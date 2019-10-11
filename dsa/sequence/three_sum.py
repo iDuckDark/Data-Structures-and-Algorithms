@@ -89,7 +89,7 @@ def three_sum_fast(arr):
 
 
 def test():
-    """test"""
+    """run test cases"""
     tests = (([-1, 0, 1, 2, -1, -4], 2),)
     for arg, result in tests:
         print(three_sum(arg))

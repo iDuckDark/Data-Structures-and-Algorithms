@@ -32,22 +32,22 @@ def binary_search(arr, target):
     # return low if arr[low] - target < target - arr[high] else high
 
 
-def binary_search_recur(arr, low, high, val):
+def binary_search_recur(arr, low, high, num):
     """
     recursive variant of binary search
     """
     if low > high:  # error case
         return -1
     mid = (low + high) // 2
-    if val < arr[mid]:
-        return binary_search_recur(arr, low, mid - 1, val)
-    if val > arr[mid]:
-        return binary_search_recur(arr, mid + 1, high, val)
+    if num < arr[mid]:
+        return binary_search_recur(arr, low, mid - 1, num)
+    if num > arr[mid]:
+        return binary_search_recur(arr, mid + 1, high, num)
     return mid
 
 
 def test():
-    """test"""
+    """run test cases"""
     tests = (
         ([1, 2, 4, 7, 9, 11], 5, -1),
         ([3, 5, 7, 8, 9, 10], 3, 0),

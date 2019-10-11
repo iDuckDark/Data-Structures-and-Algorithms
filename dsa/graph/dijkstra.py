@@ -49,8 +49,8 @@ def get_path(prev, target):
     return path
 
 
-def test_dijkstra():
-    """test"""
+def test():
+    """run test cases"""
     # graph = {
     #     "A": {"C": 2, "D": 6},
     #     "B": {"D": 10, "A": 3},
@@ -76,4 +76,4 @@ def test_dijkstra():
 
 
 if __name__ == "__main__":
-    test_dijkstra()
+    test()

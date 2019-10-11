@@ -1,7 +1,7 @@
 """
 Heaps are arrays for which a[k] <= a[2*k+1] and a[k] <= a[2*k+2] for
-all k, counting elements from 0.  For the sake of comparison,
-non-existing elements are considered to be infinite.  The interesting
+all k, counting elements from 0. For the sake of comparison,
+non-existing elements are considered to be infinite. The interesting
 property of a heap is that a[0] is always its smallest element.
 
 References:
@@ -71,11 +71,15 @@ class MinHeap:
         return lastelt
 
 
-def test_min_heap():
-    """test methods"""
+def test():
+    """run test cases"""
     heap = MinHeap()
     heap.push(5)
     heap.push(3)
     assert heap.heap == [3, 5]
     assert heap.pop() == 3
     assert heap.heap == [5]
+
+
+if __name__ == "__main__":
+    test()

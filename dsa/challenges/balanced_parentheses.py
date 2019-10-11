@@ -1,8 +1,18 @@
-"""check if parentheses are balanced"""
+"""
+Check if parentheses in a string are balanced.
+
+References:
+- https://bradfieldcs.com/algos/stacks/balanced-parentheses/
+"""
 
 
-def is_valid(string: str) -> bool:
-    """is valid"""
+def is_balanced(string: str) -> bool:
+    """
+    Args:
+        string: A string consisting only of parentheses.
+    Time: O(n)
+    Space: O(n)
+    """
     stack = []
     braces = {")": "(", "]": "[", "}": "{"}
     for char in string:
@@ -14,7 +24,7 @@ def is_valid(string: str) -> bool:
 
 
 def test():
-    """test"""
+    """run test cases"""
     test_cases = (
         ("", True),
         ("()", True),
@@ -22,9 +32,12 @@ def test():
         ("(]", False),
         ("([)]", False),
         ("{[]}", True),
+        ("((()))", True),
+        ("(()", False),
+        ("())", False),
     )
     for arg, expected in test_cases:
-        assert is_valid(arg) == expected
+        assert is_balanced(arg) == expected
 
 
 if __name__ == "__main__":

@@ -19,7 +19,7 @@ def quicksort_recursive(arr):
 
 
 def test():
-    """test"""
+    """run test cases"""
     tests = (
         ([1], [1]),
         ([1, 2], [1, 2]),

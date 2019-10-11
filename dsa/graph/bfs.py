@@ -6,12 +6,13 @@ from graph_examples import DIRECTED_GRAPH
 
 
 def bfs(graph, start):
-    """Breadth first search
-    time: O(|V| + |E|)
-
+    """
+    Breadth first search
     Args:
         graph (dict): graph
         start (node): some key of the graph
+
+    Time: O(|V| + |E|)
     """
     seen = set()
     path = []
@@ -26,7 +27,7 @@ def bfs(graph, start):
 
 
 def test():
-    """test"""
+    """run test cases"""
     assert bfs(DIRECTED_GRAPH, "C") == ["C", "A", "F", "B", "E", "D"]
 
 

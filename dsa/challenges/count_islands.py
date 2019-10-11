@@ -1,7 +1,7 @@
 """
-Given a matrix of 1s and 0s, count the number of islands.
-An island is surrounded by water and is formed by
-connecting adjacent lands horizontally or vertically.
+Given a matrix of 1s and 0s, count the number of islands. An island is
+surrounded by water and is formed by connecting adjacent lands horizontally
+or vertically.
 You may assume all four edges of the grid are all surrounded by water.
 
 Example 1:
@@ -24,12 +24,19 @@ from typing import List
 
 
 def count_islands(grid: List[List[str]]) -> int:
-    """count the number of islands in a grid"""
+    """
+    Args:
+        grid: a 2d list of 1s or 0s
+    Returns:
+        the number of islands in the grid
+
+    Time: O(n)
+    """
 
     def dfs(i, j):
         """ do a depth first search in grid at (i,j) """
         if i in range(len(grid)) and j in range(len(grid[0])) and grid[i][j] == "1":
-            grid[i][j] = "0"
+            grid[i][j] = "0"  # mark the cell as visited
             for pos in ((i + 1, j), (i - 1, j), (i, j + 1), (i, j - 1)):
                 dfs(*pos)
             return 1
@@ -39,7 +46,7 @@ def count_islands(grid: List[List[str]]) -> int:
 
 
 def test_count_islands():
-    """test"""
+    """run test cases"""
     tests = ("11000\n11000\n00100\n00011", "11110\n11010\n11000\n00000")
     for test in tests:
         grid = [list(line) for line in test.splitlines()]

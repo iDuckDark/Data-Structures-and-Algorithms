@@ -6,7 +6,10 @@ from typing import List
 
 
 def solve_naive(heights: List[int]) -> int:
-    """naive solution, O(n^2)"""
+    """
+    naive solution
+    Time: O(n^2)
+    """
     max_vol = 0
     for i, start in enumerate(heights):
         for j, end in enumerate(heights[i + 1 :], i + 1):
@@ -15,7 +18,10 @@ def solve_naive(heights: List[int]) -> int:
 
 
 def solve(heights: List[int]) -> int:
-    """work from both ends, O(n)"""
+    """
+    work from both ends
+    Time: O(n)
+    """
     max_vol = 0
     i = 0
     j = len(heights) - 1
@@ -29,9 +35,14 @@ def solve(heights: List[int]) -> int:
 
 
 def test():
-    """test"""
-    tests = (([], 0), ([1, 1], 1), ([5, 2, 4], 8), ([1, 8, 6, 2, 5, 4, 8, 3, 7], 49))
-    for arg, expected in tests:
+    """run test cases"""
+    test_cases = (
+        ([], 0),
+        ([1, 1], 1),
+        ([5, 2, 4], 8),
+        ([1, 8, 6, 2, 5, 4, 8, 3, 7], 49),
+    )
+    for arg, expected in test_cases:
         assert solve_naive(arg) == expected
         assert solve(arg) == expected
 

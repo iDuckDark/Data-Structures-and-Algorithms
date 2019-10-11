@@ -86,8 +86,8 @@ class LinkedList:
         return "->".join(str(node.data) for node in self)
 
 
-def test_linked_list():
-    """test"""
+def test():
+    """run test cases"""
     lst = LinkedList(Node(3))
     lst.append(Node(5))
     lst.append(Node(6))
@@ -97,4 +97,4 @@ def test_linked_list():
 
 
 if __name__ == "__main__":
-    test_linked_list()
+    test()
