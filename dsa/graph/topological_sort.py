@@ -42,6 +42,25 @@ def topological_sort_kahn(graph) -> list:
     return ordering
 
 
+def iterative_topological_sort(graph, start):
+    """doesn't return some nodes"""
+    seen = set()
+    stack = []  # path variable is gone, stack and order are new
+    order = []  # order will be in reverse order at first
+    queue = [start]
+    while queue:
+        node = queue.pop()
+        if node not in seen:
+            seen.add(node)  # no need to append to path any more
+            queue.extend(graph[node])
+
+            while stack and node not in graph[stack[-1]]:  # new stuff here!
+                order.append(stack.pop())
+            stack.append(node)
+
+    return stack + order[::-1]  # new return value!
+
+
 def test():
     """run test cases"""
     graph = {
@@ -55,6 +74,7 @@ def test():
         "11": ["2", "9", "10"],
     }
     assert topological_sort_kahn(graph) == ["7", "5", "11", "2", "3", "8", "10", "9"]
+    print(iterative_topological_sort(graph, "7"))
 
 
 if __name__ == "__main__":
