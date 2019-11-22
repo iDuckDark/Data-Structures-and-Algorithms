@@ -1,6 +1,6 @@
 """
-References:
-- https://leetcode.com/problems/container-with-most-water/
+Found in:
+    https://leetcode.com/problems/container-with-most-water/
 """
 from typing import List
 

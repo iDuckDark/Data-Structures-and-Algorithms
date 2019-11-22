@@ -1,7 +1,7 @@
 """prime check"""
 
 
-def prime_check(n):
+def prime_check(n: int) -> bool:
     """Return True if n is a prime number
     Else return False.
     """

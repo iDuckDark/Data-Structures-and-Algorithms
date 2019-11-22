@@ -14,8 +14,8 @@ producing a shortest-path tree.
 Conditions:
 - positive edge weights
 
-References:
-- https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm
+Links:
+    https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm
 """
 import heapq
 

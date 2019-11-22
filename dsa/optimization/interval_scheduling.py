@@ -2,7 +2,7 @@
 Interval scheduling.
 
 References:
-- https://en.wikipedia.org/wiki/Interval_scheduling
+    https://en.wikipedia.org/wiki/Interval_scheduling
 """
 from operator import itemgetter
 

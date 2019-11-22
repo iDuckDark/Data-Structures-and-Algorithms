@@ -17,8 +17,8 @@ Example 2:
 00011
 Answer: 3
 
-References:
-- https://leetcode.com/problems/number-of-islands/
+Found in:
+    https://leetcode.com/problems/number-of-islands/
 """
 from typing import List
 
@@ -45,13 +45,13 @@ def count_islands(grid: List[List[str]]) -> int:
     return sum(dfs(i, j) for i in range(len(grid)) for j in range(len(grid[0])))
 
 
-def test_count_islands():
+def test():
     """run test cases"""
     tests = ("11000\n11000\n00100\n00011", "11110\n11010\n11000\n00000")
-    for test in tests:
-        grid = [list(line) for line in test.splitlines()]
+    for testcase in tests:
+        grid = [list(line) for line in testcase.splitlines()]
         print(count_islands(grid))
 
 
 if __name__ == "__main__":
-    test_count_islands()
+    test()

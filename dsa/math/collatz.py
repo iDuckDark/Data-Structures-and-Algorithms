@@ -1,8 +1,8 @@
 """
 Collatz conjecture
 
-References:
-- https://en.wikipedia.org/wiki/Collatz_conjecture
+Links:
+    https://en.wikipedia.org/wiki/Collatz_conjecture
 """
 
 

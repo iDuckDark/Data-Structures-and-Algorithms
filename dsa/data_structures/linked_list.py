@@ -1,12 +1,12 @@
 """Linked list
 
 Reference:
-- https://en.wikipedia.org/wiki/Linked_list
-- https://stackoverflow.com/a/50483259/9518712
+    https://en.wikipedia.org/wiki/Linked_list
+    https://stackoverflow.com/a/50483259/9518712
 """
 
 
-class Node:
+class ListNode:
     """linked list node"""
 
     def __init__(self, data, next_node=None):
@@ -23,19 +23,19 @@ class Node:
 class LinkedList:
     """linked list"""
 
-    def __init__(self, head: Node = None):
+    def __init__(self, head: ListNode = None):
         self.head = head
 
     def is_empty(self) -> bool:
         """return whether the linked list contains no nodes"""
         return self.head is None
 
-    def insert(self, node: Node):
+    def insert(self, node: ListNode):
         """insert node at beginning of list"""
         node.next = self.head
         self.head = node
 
-    def append(self, node: Node):
+    def append(self, node: ListNode):
         """
         append node to end of linked list
         O(n) time
@@ -88,9 +88,9 @@ class LinkedList:
 
 def test():
     """run test cases"""
-    lst = LinkedList(Node(3))
-    lst.append(Node(5))
-    lst.append(Node(6))
+    lst = LinkedList(ListNode(3))
+    lst.append(ListNode(5))
+    lst.append(ListNode(6))
     assert str(lst) == "3->5->6"
     assert lst.pop() == 6
     assert str(lst) == "3->5"

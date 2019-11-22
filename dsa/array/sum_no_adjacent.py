@@ -2,8 +2,8 @@
 Given a list on non-negative integers, find the max sum without using adjacent
 numbers.
 
-References:
-- https://leetcode.com/problems/house-robber/
+Found in:
+    https://leetcode.com/problems/house-robber/
 """
 from typing import List
 

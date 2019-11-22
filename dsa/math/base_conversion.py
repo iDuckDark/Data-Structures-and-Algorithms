@@ -1,8 +1,8 @@
 """
 Base conversion
 
-References:
-- https://bradfieldcs.com/algos/stacks/converting-number-bases/
+Links:
+    https://bradfieldcs.com/algos/stacks/converting-number-bases/
 """
 
 SYMBOLS = "0123456789abcdefghijklmnopqrstuvwxyz"

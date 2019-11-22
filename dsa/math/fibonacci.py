@@ -1,6 +1,9 @@
 """
 The Fibonacci sequence is defined as a recurrence relation.
 fn+1 = fn + fn-1, with f(0) = 1, and f(1) = 1
+
+Links:
+    https://en.wikipedia.org/wiki/Fibonacci_number
 """
 import functools
 import math
@@ -22,15 +25,12 @@ def fibonacci_recursive(n):
 def fibonacci_iterative(n):
     """Iterative implementation of the fibonacci function
 
-    time: O(n)
-    space: O(n)
+    Time: O(n)
     """
-    if n == 0:
-        return 0
     last, curr = 0, 1
-    for _ in range(1, n):
+    for _ in range(n):
         last, curr = curr, last + curr
-    return curr
+    return last
 
 
 @functools.lru_cache()
@@ -59,3 +59,15 @@ def fibonacci_closed(n):
     """
     golden_ratio = (1 + math.sqrt(5)) / 2
     return round(golden_ratio ** n / math.sqrt(5))
+
+
+def test():
+    """run test cases"""
+    test_cases = ((0, 0), (1, 1), (2, 1), (3, 2), (4, 3), (12, 144))
+
+    for arg, expected in test_cases:
+        assert fibonacci_iterative(arg) == expected
+
+
+if __name__ == "__main__":
+    test()

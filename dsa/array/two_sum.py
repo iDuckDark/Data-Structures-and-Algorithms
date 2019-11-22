@@ -9,9 +9,9 @@ Example:
     Because nums[0] + nums[1] = 2 + 7 = 9,
     return (0, 1)
 
-References
-- https://en.wikipedia.org/wiki/Subset_sum_problem
-- https://leetcode.com/problems/two-sum/
+Links:
+    https://en.wikipedia.org/wiki/Subset_sum_problem
+    https://leetcode.com/problems/two-sum/
 """
 
 

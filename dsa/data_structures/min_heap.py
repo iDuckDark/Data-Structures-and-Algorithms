@@ -4,17 +4,32 @@ all k, counting elements from 0. For the sake of comparison,
 non-existing elements are considered to be infinite. The interesting
 property of a heap is that a[0] is always its smallest element.
 
-References:
-- https://en.wikipedia.org/wiki/Heap_(data_structure)
-- https://github.com/python/cpython/blob/master/Lib/heapq.py
+Links:
+    https://en.wikipedia.org/wiki/Heap_(data_structure)
+    https://github.com/python/cpython/blob/master/Lib/heapq.py
+    https://runestone.academy/runestone/books/published/pythonds/Trees/BinaryHeapImplementation.html
 """
 
 
 class MinHeap:
     """Implementation of min heap"""
 
-    def __init__(self):
+    def __init__(self, arr=None):
+        if arr:
+            # Transform bottom-up.  The largest index there's any point to looking at
+            # is the largest with a child index in-range, so must have 2*i + 1 < n,
+            # or i < (n-1)/2.  If n is even = 2*j, this is (2*j-1)/2 = j-1/2 so
+            # j-1 is the largest, which is n//2 - 1.  If n is odd = 2*j+1, this is
+            # (2*j+1-1)/2 = j so j-1 is the largest, and that's again n//2-1.
+            # O(n) time, in place
+            self.heap = arr
+            for i in reversed(range(len(self) // 2)):
+                self._siftup(i)
+
         self.heap = []
+
+    def __len__(self):
+        return len(self.heap)
 
     def _siftdown(self, startpos, pos):
         """
@@ -26,7 +41,7 @@ class MinHeap:
         # Follow the path to the root, moving parents down until finding a place
         # newitem fits.
         while pos > startpos:
-            parentpos = (pos - 1) >> 1
+            parentpos = (pos - 1) // 2
             parent = self.heap[parentpos]
             if newitem < parent:
                 self.heap[pos] = parent

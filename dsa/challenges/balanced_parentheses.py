@@ -1,8 +1,8 @@
 """
 Check if parentheses in a string are balanced.
 
-References:
-- https://bradfieldcs.com/algos/stacks/balanced-parentheses/
+Links:
+    https://bradfieldcs.com/algos/stacks/balanced-parentheses/
 """
 
 

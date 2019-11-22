@@ -1,5 +1,5 @@
 """
-three values that sum to x
+find three values that sum to x
 """
 
 

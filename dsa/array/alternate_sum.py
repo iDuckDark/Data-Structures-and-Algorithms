@@ -1,5 +1,7 @@
 """
 Alternate sum
+
+Given an array [x1, x2, x3, ...] compute x1 - x2 + x3 - ...
 """
 from typing import List
 

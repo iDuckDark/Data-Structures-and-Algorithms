@@ -10,7 +10,7 @@ def remove_nth_from_end(head, n):
     """
     front = head
     current = head
-
+    # advance the pointer
     for _ in range(n):
         front = front.next
     if not front:
